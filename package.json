@@ -1,0 +1,40 @@
+{
+  "name": "energy-consumption-app",
+  "version": "1.0.0",
+  "description": "Technical assignment for the Backend Role",
+  "main": "index.js",
+  "keywords": [
+    "node.js",
+    "express",
+    "graphql",
+    "redis",
+    "typescript"
+  ],
+  "author": "Md Sazzadul Islam",
+  "license": "ISC",
+  
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch --onlyChanged"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1"
+  }
+ 
+}
