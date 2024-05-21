@@ -28,6 +28,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "apollo-server": "^3.13.0",
     "apollo-server-express": "^3.13.0",
     "bottleneck": "^2.19.5",
     "cors": "^2.8.5",
