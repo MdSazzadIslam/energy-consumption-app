@@ -1,2 +1,2 @@
-# -energy-consumption
-Technichal assignment for the Backend Role
+# energy-consumption-app
+Technical assignment for the Backend Role
