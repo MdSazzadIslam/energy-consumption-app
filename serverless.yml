@@ -30,3 +30,17 @@ functions:
     handler: src/fn_graphql.handler
     events:
       - httpApi: '*'
+
+
+resources:
+  Resources:
+    RedisCluster:
+      Type: AWS::ElastiCache::ReplicationGroup
+      Properties:
+        ReplicationGroupDescription: Redis replication group
+        Engine: redis
+        CacheNodeType: cache.t2.micro
+        NumCacheClusters: 1
+        CacheSubnetGroupName: default
+        CacheParameterGroupName: default.redis6.x
+        AutomaticFailoverEnabled: true
